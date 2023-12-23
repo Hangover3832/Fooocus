@@ -427,6 +427,8 @@ def worker():
         if 'vary' in goals:
             if 'subtle' in uov_method:
                 denoising_strength = 0.5
+            if 'medium' in uov_method:
+                denoising_strength = 0.65
             if 'strong' in uov_method:
                 denoising_strength = 0.85
             if advanced_parameters.overwrite_vary_strength > 0:
